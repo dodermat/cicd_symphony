@@ -1,0 +1,8 @@
+# .dockerignore
+.gcloudignore
+.git
+.gitignore
+vendor/
+var/
+Dockerfile
+.dockerignore
