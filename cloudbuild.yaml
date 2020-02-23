@@ -1,6 +1,7 @@
 steps:
   # Build
   - name: 'gcr.io/cloud-builders/docker'
-    args: [ 'build', '--build-arg', 'COMPOSER_FLAGS=--dev', '-t', gcr.io/fifth-catcher-269013/github.com/dodermat/cicd_symphony:$SHORT_SHA, '.' ]
+  
+    args: [ 'build', '--build-arg', 'COMPOSER_FLAGS=--dev', '-t', 'gcr.io/fifth-catcher-269013/github.com/dodermat/cicd_symphony:$COMMIT_SHA', '.' ]
   - name: 'gcr.io/cloud-builders/docker'
     args: [ 'push', 'gcr.io/$PROJECT_ID/$REPO_NAME:$COMMIT_SHA' ]
