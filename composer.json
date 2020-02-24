@@ -6,6 +6,8 @@
         "ext-ctype": "*",
         "ext-iconv": "*",
         "google/cloud": "^0.125.0",
+        "google/cloud-error-reporting": "^0.16.0",
+        "google/cloud-logging": "^1.19",
         "sensio/framework-extra-bundle": "^5.5",
         "symfony/console": "5.0.*",
         "symfony/dotenv": "5.0.*",
