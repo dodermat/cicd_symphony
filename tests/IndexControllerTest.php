@@ -13,6 +13,6 @@ class IndexControllerTest extends WebTestCase
 
         $this->assertSame(200, $client->getResponse()->getStatusCode());
 
-        $this->assertContains('Hello Dani', $crawler->filter('h1')->text());
+        $this->assertContains('Hello IndexController', $crawler->filter('h1')->text());
     }
 }
