@@ -12,6 +12,6 @@ class IndexControllerTest extends WebTestCase
         $crawler = $client->request('GET', '/');
 
         $this->assertSame(200, $client->getResponse()->getStatusCode());
-        $this->assertContains('Hello Index', $crawler->filter('h1')->text());
+        $this->assertContains('Hello IndexControllerTest', $crawler->filter('h1')->text());
     }
 }
